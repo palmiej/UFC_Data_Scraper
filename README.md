@@ -16,6 +16,7 @@ Usage
 
 ### Step 1
 Import the scraper from UFC_Data_Scraper package
+
 `from UFC_Data_Scraper import scraper as s`
 
 ### Step 2
