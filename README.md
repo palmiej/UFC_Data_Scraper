@@ -15,9 +15,14 @@ Usage
 -----
 
 ### Step 1
+Import the scraper from UFC_Data_Scraper package
+`from UFC_Data_Scraper import scraper as s`
+
+### Step 2
 Create instance of Ufc_Data_Scraper object:  
 `scraper = s.Ufc_Data_Scraper()`
-### Step 2
+
+### Step 3
 Choose class method for getting fighter or Fights data:
 
 `list_of_fighters = scraper.get_all_fighters()`
@@ -26,7 +31,7 @@ or
 
 `list_of_fights =  scraper.scrape_all_fights()`
 
-### Step 3
+### Step 4
 Convert from list of fighter or fight objects into list of dictionaries:
 
 `json_fighter_list = s.Ufc_Data_Scraper().fighter_to_Json(list_of_fighters)`
@@ -35,7 +40,7 @@ Convert from list of fighter or fight objects into list of dictionaries:
  
 `json_fights_list = s.Ufc_Data_Scraper().fights_to_Json(list_of_fights)`
 
-### Step 4
+### Step 5
 Save dictionaries into Json:
 
 `s.Ufc_Data_Scraper().save_json("<name of JSON file>", json_fighter_list)`
