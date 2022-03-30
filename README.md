@@ -20,7 +20,8 @@ Import the scraper from UFC_Data_Scraper package
 `from UFC_Data_Scraper import scraper as s`
 
 ### Step 2
-Create instance of Ufc_Data_Scraper object:  
+Create instance of Ufc_Data_Scraper object: 
+
 `scraper = s.Ufc_Data_Scraper()`
 
 ### Step 3
